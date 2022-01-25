@@ -1,298 +1,56 @@
 body{
-    overflow-x: hidden;
+    overflow-x: hidden; margin: 0; padding: 0; background: #fefefe; 
 }
-.header{
-    width: 100%;
-    position: fixed;
-    z-index: 10;
+/*----Header Section----*/
+.header{width: 100%; position: fixed; z-index: 10;
 }
 
+
+/*----Top Bar Section----*/
 .top-bar{
-    background: #0a6aaa;
+    background: #eab83a;  padding: .3rem 0.1rem 0;  color: #f5f4f4;  font-family: sans-serif; 
+    font-size: .9rem;
 }
+span.top-icon {
+    background: #d39c29; border: 1px solid #f5f4f4; border-radius: 50%;  color: #f5f4f4;
+    display: inline-block;  width: 25px;  height: 25px;  line-height: 25px;  margin-right: 10px;
+    text-align: center;  font-weight: bold;  font-size: .7rem;
+}
+.top-bar .button {font-size: 0.7rem; text-align: center; padding: .3rem .7rem; margin-top: 0;}
+.top-bar .button:after {background-color: rgb(208 76 81 / 58%);;}
+.top-bar .button:before {background-color: #d04c51;}
 
+
+/*------Navigation Bar Styling------*/
 .navbar {
-    background: rgb(0, 73, 147, .7) !important; /*rgb(203 64 68 / 70%)!important*/;
-    background-blend-mode: darken;
-    width: 100%;
-    height: fit-content;
-    border-bottom: 1px solid #eab83a;
-    /*padding: 0.1rem !important;*/
+    background: rgb(0, 73, 147, .7) !important; background-blend-mode: darken;  width: 100%;
+    height: fit-content; border-bottom: 1px solid #eab83a;
+}
+.navbar-brand { padding: 0 !important;text-align: center;
 }
 
-.navbar-brand {
-    padding: 0 !important;
-    text-align: center;
+.nav-menu a { padding: 0.7rem 0.5rem;  font-family: Arial, Helvetica, sans-serif;
+    font-size: .75rem; font-weight: 500;  letter-spacing: .01rem;  text-decoration: none;
+    color: #cdd8e3 !important;  text-transform: uppercase;  display: block;  line-height: .2rem;
 }
 
-.nav-menu a {
-    padding: 0.7rem 0.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .75rem;
-    font-weight: 500;
-    letter-spacing: .01rem;
-    text-decoration: none;
-    color: #cdd8e3 !important;
-    text-transform: uppercase;
-    display: block;
-    line-height: .2rem;
+.nav-menu a.is-active{ background: #d04c51;   color: #FFF !important;
+    border-radius: 1px;  border-bottom: 2px solid #2e2e2e;
 }
 
-.nav-menu a.is-active{
-    background: #d04c51;
-    color: #FFF /*#fef797*/ !important;
-    border-radius: 2px;
-    border-bottom: 2px solid rgb(254 247 151 / 65%);
-}
-
-
-/* stillwells body css */
-.header-content .container {
-    padding-top: 50px;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-}
-
-.header-content h1{
-    padding:0.75rem ;
-}
-
-.header-content h6{
-    padding:0.75rem ;
-}
-
-.header-content .heading{
-    padding:0.75rem  ;
-    margin-top: 4.5rem;
-}
-
-/* .header-content .moreInfo{
-    display: inline-block;
-    position: relative;
-    margin-top: 1rem;
-    margin-left: 72px;
-} */
-.header-content .button {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 0.75rem 1.25rem;
-    border-radius: 10rem;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1rem;
-    letter-spacing: 0.15rem;
-    transition: all 0.3s;
-    position: relative;
-    overflow: hidden;
+/*------Button Styling------*/
+.button {display: inline-block;   margin-top: 2rem;  padding: 0.8rem 1.25rem;  border-radius: 10rem;
+    color: #fff;  text-transform: uppercase;  text-decoration: none;  font-size: 1rem;
+    letter-spacing: 0.15rem; transition: all 0.3s;  position: relative;  overflow: hidden;
     z-index: 1;
 }
-
-.header-content .button:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0cf;
-    border-radius: 10rem;
-    z-index: -2;
+.button:after {content: ""; position: absolute;  bottom: 0; left: 0; width: 100%; height: 100%;
+    background-color: #0cf; border-radius: 10rem; z-index: -2;
 }
-
-.header-content .button:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: #008fb3;
-    transition: all 0.3s;
-    border-radius: 10rem;
-    z-index: -1;
+.button:before {content: "";  position: absolute; bottom: 0; left: 0; width: 0%; height: 100%;
+    background-color: #008fb3; transition: all 0.3s; border-radius: 10rem; z-index: -1;
 }
-
-.header-content .button:hover {
-    color: #fff;
+.button:hover { color: #fff;
 }
-
-.header-content .button:hover:before {
-    width: 100%;
-}
-
-.header-content .statistics{
-    margin-top: 60px;
-    font-size: 25pt;
-    width: auto;
-}
-
-.header-content #stat-description{
-    font-family: 'Mochiy Pop P One', sans-serif;
-    font-size: 15pt;
-}
-/* header end */
-
-
-
-
-/* about start */
-.about{
-    display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	min-height: 100vh;
-}
-.about::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	
-	clip-path: circle(25% at right 60%);
-}
-
-.about::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	clip-path: circle(20% at 10% 10%);
-}
-
-.about .container {
-	position: relative;
-	z-index: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	margin: 40px 0;
-}
-
-.about .container .card {
-	position: relative;
-	width: auto;
-	height: 400px;
-	background: rgba(255, 255, 255, 0.05);
-	margin: 0;
-	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-	border-radius: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	backdrop-filter: blur(10px);
-}
-
-.about .container .card .content {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	transition: 0.5s;
-}
-
-.about .container .card:hover .content {
-	transform: translateY(-20px);
-}
-
-.about .container .card .content .imgBx {
-	position: relative;
-	width: 150px;
-	height: 150px;
-	overflow: hidden;
-}
-
-.about .container .card .content .imgBx img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.about .container .card .content .contentBx h3 {
-	color: rgb(0, 0, 0);
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: 500;
-	font-size: 18px;
-	text-align: center;
-	margin: 20px 0 10px;
-	line-height: 1.1em;
-	font-family: 'Mochiy Pop P One', sans-serif;
-}
-
-.about .container .card .content .contentBx h3 span {
-	font-size: 12px;
-	font-weight: 300;
-	text-transform: initial;
-}
-
-.about .container .card .sci {
-	position: absolute;
-	bottom: 50px;
-	display: flex;
-}
-
-.about .container .card .sci li {
-	list-style: none;
-	margin: 0 10px;
-	transform: translateY(40px);
-	transition: 0.5s;
-	opacity: 0;
-}
-
-.about .container .card:hover .sci li {
-	transform: translateY(0px);
-	opacity: 1;
-}
-
-.about .container .card .sci li a {
-	color: rgb(0, 0, 0);
-	font-size: 20px;
-	font-family: 'Lora', serif;
-}
-/* about end */
-
-/* staff start */
-.staff .row{
-    margin-top: 60px;	
-	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-}
-
-
-.staff h1{
-    font-family: 'Mochiy Pop P One', sans-serif;
-    text-transform:uppercase;
-    font-size: 50px;
-}
-
-.staff h2{
-    font-family: 'Lora', serif;
-}
-.staff .img{
-    position: relative;
-	width: 150px;
-	height: 150px;
-	overflow: hidden;
-	margin-top: 60px;
-}
-
-.staff .container .row .col img{
-    position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	
+.button:hover:before { width: 100%;
 }
