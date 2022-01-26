@@ -51,3 +51,12 @@ span.top-icon {
 }
 .button:hover:before { width: 100%;
 }
+
+/* service section styling */
+.service{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+    margin: 90px;
+} 
