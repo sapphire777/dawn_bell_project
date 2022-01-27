@@ -60,3 +60,13 @@ span.top-icon {
 	flex-wrap: wrap;
     margin: 90px;
 } 
+
+/* footer section start */
+/* .footer{
+    background-color: #008fb3;
+} */
+
+.footer .card-body{
+    background-color: #008fb3;
+}
+
