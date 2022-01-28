@@ -119,6 +119,21 @@ span.top-icon {
  .introduction a:hover:before {
     width: 100%;
 }
+/* introduction end */
+
+/* statistics section */
+.statistics{
+    margin-top: 60px;
+    font-size: 25pt;
+    width: auto;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+#stat-description{
+    font-family: 'Cinzel', serif;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15pt;
+}
 
 /* service section styling */
 .service{
